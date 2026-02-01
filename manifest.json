@@ -1,0 +1,39 @@
+{
+  "manifest_version": 3,
+  "name": "Circle Screenshot - Circular Capture Tool",
+  "version": "1.0.0",
+  "description": "Capture perfect circular screenshots with a precision lens tool. Round screen capture made easy.",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "clipboardWrite",
+    "storage",
+    "downloads"
+  ],
+  "action": {
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    },
+    "default_title": "Circle Screenshot"
+  },
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "commands": {
+    "start-circle-snip": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+O",
+        "mac": "Command+Shift+O"
+      },
+      "description": "Start Circle Snip"
+    }
+  }
+}
